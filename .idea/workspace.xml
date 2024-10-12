@@ -21,28 +21,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/rkhalid/Developer/ust/div",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/rkhalid/Developer/ust/div/node_modules/prettier",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.14.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.14.15&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/rkhalid/Developer/ust/div&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/rkhalid/Developer/ust/div/node_modules/prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/rkhalid/Developer/ust/div/client/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server" />
       <recent name="$PROJECT_DIR$/src/pages/auth" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/app" />
       <recent name="$PROJECT_DIR$/src/app/(auth)/signup" />
-      <recent name="$PROJECT_DIR$/src/app/(auth)" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -62,7 +64,7 @@
       <updated>1728599354908</updated>
       <workItem from="1728599355947" duration="5516000" />
       <workItem from="1728657191935" duration="253000" />
-      <workItem from="1728682967432" duration="7012000" />
+      <workItem from="1728682967432" duration="11479000" />
     </task>
     <servers />
   </component>

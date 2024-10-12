@@ -4,6 +4,7 @@
   "description": "A web-based workspace with flexible formatting",
   "main": "server.js",
   "scripts": {
+    "start": "npm start --prefix server",
     "test": "test"
   },
   "repository": {
@@ -15,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/razakhalid/div/issues"
   },
-  "homepage": "https://github.com/razakhalid/div#readme"
+  "homepage": "https://github.com/razakhalid/div#readme",
+  "devDependencies": {
+    "husky": "^9.1.6"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint --server"
+    }
+  }
 }
