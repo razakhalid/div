@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76a6c57e-e3cb-4051-9de2-6f138c7eb98a" name="Changes" comment="" />
+    <list default="true" id="76a6c57e-e3cb-4051-9de2-6f138c7eb98a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/pages/login/Login.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/app.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/routes/api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/routes/auth/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/tsconfig.app.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/client/tsconfig.app.tsbuildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/server.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,24 +32,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Node.js.dev.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.14.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.14.15&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/rkhalid/Developer/ust/div&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/rkhalid/Developer/ust/div/node_modules/prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/rkhalid/Developer/ust/div/client/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Node.js.dev.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "javascript.nodejs.core.library.configured.version": "20.14.0",
+    "javascript.nodejs.core.library.typings.version": "20.14.15",
+    "last_opened_file_path": "/Users/rkhalid/Developer/ust/div",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/rkhalid/Developer/ust/div/client/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "/Users/rkhalid/Developer/ust/div/client/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/server" />
@@ -49,7 +61,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="dev" type="NodeJSConfigurationType" path-to-js-file="server.ts" typescript-loader="bundled" working-dir="$PROJECT_DIR$/server/src">
+    <configuration name="dev" type="NodeJSConfigurationType" path-to-js-file="src/server.ts" typescript-loader="bundled" working-dir="$PROJECT_DIR$/server">
       <method v="2" />
     </configuration>
   </component>
@@ -70,11 +82,26 @@
       <updated>1728599354908</updated>
       <workItem from="1728599355947" duration="5516000" />
       <workItem from="1728657191935" duration="253000" />
-      <workItem from="1728682967432" duration="12666000" />
+      <workItem from="1728682967432" duration="15159000" />
+      <workItem from="1728706390889" duration="112000" />
+      <workItem from="1728706506213" duration="157000" />
+      <workItem from="1728706671366" duration="9046000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/src/routes/auth/index.ts</url>
+          <line>26</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

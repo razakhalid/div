@@ -1,16 +1,9 @@
-import express from "express";
-import path from "path";
+require("dotenv").config();
+import app from "./app";
 
-const app = express();
 const port = process.env.PORT || 8080;
-const clientPath = path.join(__dirname, '..', '..', '..', 'client');
-
-app.use(express.static(`${clientPath}/dist`));
-
-app.get("/*", (_, res) => {
-  res.sendFile(`${clientPath}/dist/index.html`);
-})
 
 app.listen(port, () => {
+  console.log(process.env.GITHUB_CLIENT_ID);
   console.log("Listening on port ", port);
 });
