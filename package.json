@@ -1,0 +1,19 @@
+{
+  "name": "div",
+  "version": "1.0.0",
+  "description": "A web-based workspace with flexible formatting",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/razakhalid/div.git"
+  },
+  "author": "Raza Khalid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/razakhalid/div/issues"
+  },
+  "homepage": "https://github.com/razakhalid/div#readme"
+}
