@@ -23,6 +23,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Node.js.dev.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.14.0&quot;,
@@ -47,6 +48,11 @@
       <recent name="$PROJECT_DIR$/src/app/(auth)/signup" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="dev" type="NodeJSConfigurationType" path-to-js-file="server.ts" typescript-loader="bundled" working-dir="$PROJECT_DIR$/server/src">
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -64,7 +70,7 @@
       <updated>1728599354908</updated>
       <workItem from="1728599355947" duration="5516000" />
       <workItem from="1728657191935" duration="253000" />
-      <workItem from="1728682967432" duration="11479000" />
+      <workItem from="1728682967432" duration="12666000" />
     </task>
     <servers />
   </component>
