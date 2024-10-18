@@ -4,16 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76a6c57e-e3cb-4051-9de2-6f138c7eb98a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/pages/login/Login.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/app.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/routes/api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/routes/auth/index.ts" afterDir="false" />
+    <list default="true" id="75c33629-2ae8-47e4-affe-3628b9ee02d4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/App.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/home/Home.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/router/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/login/Login.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/tsconfig.app.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/client/tsconfig.app.tsbuildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/routes/auth/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes/auth/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/server.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,83 +30,73 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 4
+  &quot;associatedIndex&quot;: 7
 }</component>
-  <component name="ProjectId" id="2nGVMoYN3UAMGRPh8xgIR2lWVXG" />
+  <component name="ProjectId" id="2nDwx5SaotVxluphq0W6iWshYHh" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Node.js.dev.executor": "Debug",
+    "Node.js.dev.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "javascript.nodejs.core.library.configured.version": "20.14.0",
-    "javascript.nodejs.core.library.typings.version": "20.14.15",
-    "last_opened_file_path": "/Users/rkhalid/Developer/ust/div",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/Users/razakhalid/Developer/div",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/rkhalid/Developer/ust/div/client/node_modules/prettier",
+    "prettierjs.PrettierConfiguration.Package": "/Users/razakhalid/Developer/div/node_modules/prettier",
     "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/Users/rkhalid/Developer/ust/div/client/node_modules/typescript/lib",
+    "ts.external.directory.path": "/Users/razakhalid/Developer/div/server/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/pages" />
       <recent name="$PROJECT_DIR$/server" />
-      <recent name="$PROJECT_DIR$/src/pages/auth" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/app" />
-      <recent name="$PROJECT_DIR$/src/app/(auth)/signup" />
+      <recent name="$PROJECT_DIR$/client" />
+      <recent name="$PROJECT_DIR$/src/app/components/wrappers" />
+      <recent name="$PROJECT_DIR$/src/app/material-ui" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="dev" type="NodeJSConfigurationType" path-to-js-file="src/server.ts" typescript-loader="bundled" working-dir="$PROJECT_DIR$/server">
+    <configuration name="dev" type="NodeJSConfigurationType" path-to-js-file="src/server.ts" working-dir="$PROJECT_DIR$/server">
       <method v="2" />
     </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.22855.79" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-WS-241.15989.105" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="76a6c57e-e3cb-4051-9de2-6f138c7eb98a" name="Changes" comment="" />
-      <created>1728599354908</created>
+      <changelist id="75c33629-2ae8-47e4-affe-3628b9ee02d4" name="Changes" comment="" />
+      <created>1728521197533</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1728599354908</updated>
-      <workItem from="1728599355947" duration="5516000" />
-      <workItem from="1728657191935" duration="253000" />
-      <workItem from="1728682967432" duration="15159000" />
-      <workItem from="1728706390889" duration="112000" />
-      <workItem from="1728706506213" duration="157000" />
-      <workItem from="1728706671366" duration="9046000" />
+      <updated>1728521197533</updated>
+      <workItem from="1728521198951" duration="8836000" />
+      <workItem from="1728614903492" duration="65000" />
+      <workItem from="1729210134455" duration="5622000" />
+      <workItem from="1729219338069" duration="4439000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/server/src/routes/auth/index.ts</url>
-          <line>26</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/app/material-ui/theme.d.ts" />
+      </list>
+    </option>
   </component>
 </project>

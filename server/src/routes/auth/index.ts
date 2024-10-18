@@ -22,19 +22,14 @@ authRouter.get("/github/callback", async (req, res) => {
         redirect_uri: "http://localhost:8080/api/v1/auth/github/callback", // TODO: make dynamic for production
       },
     });
-    console.log(response);
     const { access_token } = response?.data;
     res.cookie("github_access_token", access_token, {
-      secure: true,
       maxAge: 120000,
-      httpOnly: true,
     });
+    return res.redirect(`http://localhost:5173`);
   } catch (err) {
     console.error(err);
   }
-
-  // TODO: make dynamic for production
-  return res.redirect(process.env.CLIENT_URL_LOGIN);
 });
 
 export default authRouter;
