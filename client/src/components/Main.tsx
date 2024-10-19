@@ -15,7 +15,7 @@ export default function MainWrapper({
       {location?.pathname !== paths.LOGIN_PAGE && <Nav />}
       <Box
         sx={{
-          padding: (theme) => theme.spacing(2),
+          padding: (theme) => theme.spacing(4),
         }}
       >
         <main>{children}</main>

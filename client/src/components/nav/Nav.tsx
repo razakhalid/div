@@ -1,30 +1,46 @@
 import { Box, Button } from "@mui/material";
 import { paths, sizes } from "../../constants";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import HomeIcon from "@mui/icons-material/Home";
+import LogoutIcon from "@mui/icons-material/Logout";
 
-const links = [
+const topLinks = [
   {
     path: paths.HOME_PAGE,
-    icon: HomeIcon,
+    icon: <HomeIcon />,
     label: "Home",
   },
 ];
 
-function NavBarLinks() {
-  return links.map((link, index) => (
+const LinkButton = ({
+  icon,
+  label,
+}: {
+  icon: React.ReactNode;
+  label: string;
+}) => (
+  <Button
+    sx={{
+      width: "100%",
+      justifyContent: "flex-start",
+      paddingLeft: (theme) => theme.spacing(2),
+    }}
+  >
+    {icon}
+    <Box sx={{ marginLeft: (theme) => theme.spacing(1) }}>{label}</Box>
+  </Button>
+);
+
+const TopLinks = () =>
+  topLinks.map((link, index) => (
     <NavLink
       to={link.path}
       className={({ isActive }) => (isActive ? "active" : "")}
       key={index}
     >
-      <Button>
-        <link.icon />
-        {link.label}
-      </Button>
+      <LinkButton label={link.label} icon={link.icon} />
     </NavLink>
   ));
-}
 
 export default function Nav() {
   return (
@@ -46,7 +62,7 @@ export default function Nav() {
             paddingBottom: (theme) => theme.spacing(4),
           }}
         >
-          <NavBarLinks />
+          <TopLinks />
         </Box>
         <Box
           className={"links-container bottom"}
@@ -55,9 +71,9 @@ export default function Nav() {
             paddingBottom: (theme) => theme.spacing(4),
           }}
         >
-          <Button component={Link} to={paths.LOGIN_PAGE}>
-            Logout
-          </Button>
+          <NavLink to={paths.LOGIN_PAGE}>
+            <LinkButton icon={<LogoutIcon />} label={"Logout"} />
+          </NavLink>
         </Box>
       </Box>
     </nav>
