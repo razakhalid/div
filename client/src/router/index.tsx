@@ -10,11 +10,10 @@ import Home from "../pages/home/Home.tsx";
 import { useContext } from "react";
 import { AppContext } from "../App.tsx";
 import { paths } from "../constants";
+import MainWrapper from "../components/Main.tsx";
 
 function PrivateRoute() {
-  const appContext = useContext(AppContext);
-  const { githubAccessToken } = appContext;
-  const isLoggedIn = !!githubAccessToken;
+  const { isLoggedIn } = useContext(AppContext);
   if (!isLoggedIn) return <Navigate to={paths.LOGIN_PAGE} replace />;
   return <Outlet />;
 }
@@ -22,20 +21,22 @@ function PrivateRoute() {
 export default function AppRouter() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route element={<PrivateRoute />}>
-          <Route path={paths.HOME_PAGE} element={<Home />} />
-        </Route>
-        <Route path={paths.LOGIN_PAGE} element={<Login />} />
-        <Route
-          path={"*"}
-          element={
-            <>
-              <h1>404</h1>
-            </>
-          }
-        />
-      </Routes>
+      <MainWrapper>
+        <Routes>
+          <Route element={<PrivateRoute />}>
+            <Route path={paths.HOME_PAGE} element={<Home />} />
+          </Route>
+          <Route path={paths.LOGIN_PAGE} element={<Login />} />
+          <Route
+            path={"*"}
+            element={
+              <>
+                <h1>404</h1>
+              </>
+            }
+          />
+        </Routes>
+      </MainWrapper>
     </BrowserRouter>
   );
 }

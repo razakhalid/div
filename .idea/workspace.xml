@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75c33629-2ae8-47e4-affe-3628b9ee02d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/constants/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/utils/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Main.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/nav/Nav.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/theme/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/client/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/constants/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/constants/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/router/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/router/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +104,7 @@
       <workItem from="1729210134455" duration="5622000" />
       <workItem from="1729219338069" duration="4474000" />
       <workItem from="1729351714119" duration="2618000" />
-      <workItem from="1729354439934" duration="2585000" />
+      <workItem from="1729354439934" duration="10482000" />
     </task>
     <servers />
   </component>

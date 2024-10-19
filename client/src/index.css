@@ -1,3 +1,13 @@
+body, html, #root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
 body {
     font-family: Roboto, sans-serif;
+}
+
+nav .links-container .active button {
+    font-weight: bold;
 }
