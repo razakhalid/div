@@ -1,21 +1,21 @@
 import {
   BrowserRouter,
-  Navigate,
+  // Navigate,
   Outlet,
   Route,
   Routes,
 } from "react-router-dom";
 import Login from "../pages/login/Login.tsx";
 import Home from "../pages/home/Home.tsx";
-import { useContext } from "react";
-import { AppContext } from "../App.tsx";
+// import { useContext } from "react";
+// import { AppContext } from "../App.tsx";
 import { paths } from "../constants";
 import MainWrapper from "../components/Main.tsx";
 import Page from "../pages/page/Page.tsx";
 
 function PrivateRoute() {
-  const { isLoggedIn } = useContext(AppContext);
-  if (!isLoggedIn) return <Navigate to={paths.LOGIN_PAGE} replace />;
+  // const { isLoggedIn } = useContext(AppContext);
+  // if (!isLoggedIn) return <Navigate to={paths.LOGIN_PAGE} replace />;
   return <Outlet />;
 }
 

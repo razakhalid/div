@@ -3,6 +3,9 @@ import { paths, sizes } from "../../constants";
 import { NavLink } from "react-router-dom";
 import HomeIcon from "@mui/icons-material/Home";
 import LogoutIcon from "@mui/icons-material/Logout";
+import PageLinks from "./PageLinks.tsx";
+import { useContext } from "react";
+import { AppContext } from "../../App.tsx";
 
 const topLinks = [
   {
@@ -43,6 +46,8 @@ const TopLinks = () =>
   ));
 
 export default function Nav() {
+  const { pages } = useContext(AppContext);
+
   return (
     <nav>
       <Box
@@ -63,6 +68,9 @@ export default function Nav() {
           }}
         >
           <TopLinks />
+          <PageLinks
+            pageLinks={pages.map(({ id, title }) => ({ id, title }))}
+          />
         </Box>
         <Box
           className={"links-container bottom"}
