@@ -11,14 +11,17 @@ export default function MainWrapper({
 }) {
   const location = useLocation();
   return (
-    <Box sx={{ display: "flex", height: "100%" }}>
+    <Box sx={{ display: "flex", height: "100%", width: "100%" }}>
       {location?.pathname !== paths.LOGIN_PAGE && <Nav />}
       <Box
         sx={{
           padding: (theme) => theme.spacing(4),
+          width: "100%",
         }}
       >
-        <main>{children}</main>
+        <Box component={"main"} sx={{ height: "100%", width: "100%" }}>
+          {children}
+        </Box>
       </Box>
     </Box>
   );

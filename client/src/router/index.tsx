@@ -11,6 +11,7 @@ import { useContext } from "react";
 import { AppContext } from "../App.tsx";
 import { paths } from "../constants";
 import MainWrapper from "../components/Main.tsx";
+import Page from "../pages/page/Page.tsx";
 
 function PrivateRoute() {
   const { isLoggedIn } = useContext(AppContext);
@@ -27,6 +28,7 @@ export default function AppRouter() {
             <Route path={paths.HOME_PAGE} element={<Home />} />
           </Route>
           <Route path={paths.LOGIN_PAGE} element={<Login />} />
+          <Route path={paths.PAGE_PAGE} element={<Page />} />
           <Route
             path={"*"}
             element={

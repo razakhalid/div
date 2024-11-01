@@ -5,8 +5,6 @@ const authRouter = express.Router();
 
 authRouter.get("/github/callback", async (req, res) => {
   const { code } = req.query;
-  if (code) console.log("i have a code i have a code", code);
-
   try {
     const url = `https://github.com/login/oauth/access_token`;
     const response = await axios.get(url, {
