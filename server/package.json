@@ -6,9 +6,9 @@
     "dev": "ts-node -r tsconfig-paths/register src/server.ts",
     "start": "npm run build && node dist/src/server.js",
     "build": "npx tsc",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage",
     "format": "prettier --write"
   },
   "keywords": [],
@@ -26,13 +26,10 @@
   "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
-    "@types/jest": "^29.5.13",
     "@types/morgan": "^1.9.9",
     "@types/node": "^22.7.5",
     "@typescript-eslint/eslint-plugin": "^8.8.1",
     "@typescript-eslint/parser": "^8.8.1",
-    "jest": "^29.7.0",
-    "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.6.3"

@@ -5,19 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75c33629-2ae8-47e4-affe-3628b9ee02d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/nav/PageLinks.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/routes/pages/controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/routes/pages/model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shared/types/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/home/Home.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/vitest.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/nav/Nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/nav/Nav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/constants/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/constants/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/home/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/page/Page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/page/Page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/router/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/router/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/routes/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/jest.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/services/db/index.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/services/db/index.test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,10 +43,12 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TypeScript.dev.executor": "Run",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/razakhalid/Developer/div",
+    "last_opened_file_path": "/Users/rkhalid/Developer/ust/div",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/Users/rkhalid/Developer/ust/div/node_modules/prettier",
@@ -89,7 +91,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-WS-241.15989.105" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.22855.79" />
       </set>
     </attachedChunks>
   </component>
@@ -109,6 +111,8 @@
       <workItem from="1729354439934" duration="13611000" />
       <workItem from="1729737418077" duration="402000" />
       <workItem from="1730425672269" duration="12095000" />
+      <workItem from="1730734241326" duration="618000" />
+      <workItem from="1731458606290" duration="3474000" />
     </task>
     <servers />
   </component>

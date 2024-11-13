@@ -1,11 +1,11 @@
-import { useContext } from "react";
+import React, { useContext } from "react";
 import { Page } from "../../../../shared/types";
 import { endpointUrls, paths } from "../../constants";
 import { useNavigate } from "react-router-dom";
 import { Button, Grid } from "@mui/material";
 import { AppContext } from "../../App.tsx";
 
-const Home = () => {
+export default function Home() {
   const { pages, setPages } = useContext(AppContext);
   const navigate = useNavigate();
 
@@ -41,7 +41,7 @@ const Home = () => {
 
   return (
     <Grid>
-      {pages?.length && (
+      {pages?.length ? (
         <div className="pages-grid">
           {pages.map((page) => (
             <div
@@ -59,12 +59,10 @@ const Home = () => {
             </div>
           ))}
         </div>
-      )}
+      ) : null}
       <Button onClick={handleNewPage} variant={"contained"}>
         New Page +
       </Button>
     </Grid>
   );
-};
-
-export default Home;
+}
