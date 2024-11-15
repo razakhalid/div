@@ -1,14 +1,9 @@
-import { Button, Typography } from "@mui/material";
+import { Button, Grid, Typography } from "@mui/material";
 import { useContext, useEffect } from "react";
 import { AppContext } from "../../App.tsx";
-// import { useSearchParams } from "react-router-dom";
-// import axios from "axios";
 
 export default function Login() {
-  // const params = new URLSearchParams(window.location.search);
-  // const [searchParams, setSearchParams] = useSearchParams();
   const github_client_id = import.meta.env.VITE_GITHUB_CLIENT_ID;
-  // const github_client_secret = import.meta.env.GITHUB_CLIENT_SECRET;
   const appContext = useContext(AppContext);
   useEffect(() => {
     console.log(appContext);
@@ -21,11 +16,26 @@ export default function Login() {
     window.location.replace(url);
   };
   return (
-    <>
-      <Typography component={"h1"} variant={"h1"}>
-        Login
-      </Typography>
-      <Button onClick={handleClickGithubLogin}>Login with GitHub</Button>
-    </>
+    <Grid
+      container
+      display={"flex"}
+      flexDirection={"column"}
+      justifyContent={"center"}
+      rowSpacing={4}
+      alignItems={"center"}
+      height={"100%"}
+      width={"100%"}
+    >
+      <Grid item textAlign={"center"}>
+        <Typography component={"h3"} variant={"h3"}>
+          Welcome to Div!
+        </Typography>
+      </Grid>
+      <Grid item>
+        <Button onClick={handleClickGithubLogin} variant={"contained"}>
+          Continue with GitHub
+        </Button>
+      </Grid>
+    </Grid>
   );
 }

@@ -3,7 +3,7 @@ import { endpointUrls } from "../../constants";
 import { useContext, useEffect, useState } from "react";
 import { Page as PageType } from "../../../../shared/types";
 import { useSearchParams } from "react-router-dom";
-import { Button } from "@mui/material";
+import { Button, Grid, Input, TextareaAutosize } from "@mui/material";
 import { AppContext } from "../../App.tsx";
 
 export default function Page() {
@@ -99,30 +99,50 @@ export default function Page() {
         page ? handleUpdatePage(event) : handleAddPage(event)
       }
     >
-      <input
-        value={title}
-        onChange={(event) => setTitle(event.target.value)}
-        placeholder="Title"
-        required
-      ></input>
-      <textarea
-        value={content}
-        onChange={(event) => setContent(event.target.value)}
-        placeholder="Content"
-        rows={10}
-        required
-      ></textarea>
+      <Grid container display={"grid"} columns={1} rowSpacing={2} px={4}>
+        <Grid item component={"div"}>
+          <Input
+            value={title}
+            onChange={(event) => setTitle(event.target.value)}
+            placeholder="Title"
+            required
+            fullWidth
+          ></Input>
+        </Grid>
 
-      {page ? (
-        <div className="edit-buttons">
-          <button type="submit">Save</button>
-          <button onClick={handleCancel}>Cancel</button>
-        </div>
-      ) : (
-        <Button type="submit" variant={"contained"} disabled={!title}>
-          Add Page
-        </Button>
-      )}
+        <Grid item component={"div"}>
+          <TextareaAutosize
+            value={content}
+            onChange={(event) => setContent(event.target.value)}
+            placeholder="Content"
+            required
+            minRows={20}
+            style={{ width: "100%" }}
+          ></TextareaAutosize>
+        </Grid>
+
+        <Grid item component={"div"}>
+          {page ? (
+            <div className="edit-buttons">
+              <Button onClick={handleCancel} variant={"outlined"}>
+                Cancel
+              </Button>
+              <Button type="submit" variant={"contained"}>
+                Save
+              </Button>
+            </div>
+          ) : (
+            <Button
+              type="submit"
+              variant={"contained"}
+              disabled={!title}
+              fullWidth
+            >
+              Add Page
+            </Button>
+          )}
+        </Grid>
+      </Grid>
     </form>
   );
 }

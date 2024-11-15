@@ -7,7 +7,7 @@ import { AppContext } from "../../App.tsx";
 export default function PageLinks() {
   const { pages } = useContext(AppContext);
   return (
-    <Grid display={"flex"} flexDirection={"column"} pl={2}>
+    <Grid container display={"flex"} flexDirection={"column"} pl={2}>
       {pages?.map((page) => (
         <Link
           key={page.id}
@@ -17,7 +17,7 @@ export default function PageLinks() {
         </Link>
       ))}
       <Link to={paths.PAGE_PAGE}>
-        <Button>New Page +</Button>
+        <Button variant={"contained"}>New Page +</Button>
       </Link>
     </Grid>
   );
