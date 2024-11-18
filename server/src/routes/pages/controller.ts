@@ -3,10 +3,10 @@ import { create, deletePage, getAll, getById, update } from "./model";
 
 const pagesRouter = express.Router();
 
-pagesRouter.get("/", async (_, res: Response) => {
+pagesRouter.get("/", async (_, res: Response): Promise<any> => {
   const pages = await getAll();
-
-  res.json(pages);
+  // console.log(pages);
+  return res.status(200).json(pages);
 });
 
 pagesRouter.get("/:pageId", async (req: Request, res: Response) => {

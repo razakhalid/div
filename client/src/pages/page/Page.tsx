@@ -51,7 +51,7 @@ export default function Page() {
       setPage(newPage);
       setTitle(newPage.title);
       setContent(newPage.content);
-      setPages((pages) => [...pages, newPage]);
+      setPages((pages: PageType[]) => [...pages, newPage]);
       console.log(pages);
     } catch (e) {
       console.log(e);

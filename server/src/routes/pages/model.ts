@@ -1,7 +1,10 @@
 import { Page } from "../../../../shared/types";
 import crypto from "crypto";
+import { query } from "../../services/db";
+import { logError } from "../../services/logger";
 
 let pages: Page[] = [];
+const userEmail = "ra97za@gmail.com";
 
 export async function getAll() {
   return pages;
@@ -13,6 +16,22 @@ export async function getById(id: string) {
 
 export async function create(page: Page) {
   if (!page.id) page.id = crypto.randomUUID();
+  try {
+    const sql = `
+        insert into pages (page_id, title, content, user_email)
+          values (
+            '${page.id}',
+            '${page.title}',
+            '${page.content}',
+            '${userEmail}'
+          );
+    `;
+    // console.log(sql);
+    await query(sql);
+  } catch (error) {
+    logError(error);
+  }
+
   pages.push(page);
   return page;
 }
