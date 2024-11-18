@@ -1,29 +1,32 @@
 // import { Grid, Input, Typography } from "@mui/material";
-import { endpointUrls } from "../../constants";
+import { endpointUrls, paths } from "../../constants";
 import { useContext, useEffect, useState } from "react";
 import { Page as PageType } from "../../../../shared/types";
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Button, Grid, Input, TextareaAutosize } from "@mui/material";
 import { AppContext } from "../../App.tsx";
 
 export default function Page() {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
-  const [URLSearchParams] = useSearchParams();
+  const params = useParams();
   const [page, setPage] = useState<PageType | null>(null);
   const { pages, setPages } = useContext(AppContext);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const pageId = URLSearchParams.get("pageId");
+    const pageId = params.id;
+    let currentPage = {
+      title: "",
+      content: "",
+    };
     if (pageId) {
-      const currentPage = pages.find(
-        (page: PageType) => page.page_id === pageId,
-      );
-      setTitle(currentPage?.title);
-      setContent(currentPage?.content);
-      setPage(currentPage);
+      currentPage = pages.find((page: PageType) => page.page_id === pageId);
     }
-  }, [URLSearchParams]);
+    setTitle(currentPage.title);
+    setContent(currentPage.content);
+    setPage(currentPage);
+  }, [params]);
 
   const handleAddPage = async (event: React.FormEvent) => {
     event.preventDefault();
@@ -40,11 +43,8 @@ export default function Page() {
       });
 
       const newPage = await response.json();
-
-      setPage(newPage);
-      setTitle(newPage.title);
-      setContent(newPage.content);
       setPages((pages: PageType[]) => [...pages, newPage]);
+      navigate({ pathname: `${paths.PAGE_PAGE}/${newPage.page_id}` });
       console.log(pages);
     } catch (e) {
       console.log(e);

@@ -12,7 +12,7 @@ export default function PageLinks() {
       {pages?.map((page: Page) => (
         <Link
           key={page.page_id}
-          to={{ pathname: paths.PAGE_PAGE, search: "?pageId=" + page.page_id }}
+          to={{ pathname: `${paths.PAGE_PAGE}/${page.page_id}` }}
         >
           <Button>{page.title}</Button>
         </Link>

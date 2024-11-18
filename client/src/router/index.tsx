@@ -32,7 +32,8 @@ export default function AppRouter() {
             <Route path={paths.HOME_PAGE} element={<Home />} />
           </Route>
           <Route path={paths.LOGIN_PAGE} element={<Login />} />
-          <Route path={paths.PAGE_PAGE} element={<Page />} />
+          <Route path={paths.PAGE_PAGE + "/"} element={<Page />} />
+          <Route path={paths.PAGE_PAGE + "/:id"} element={<Page />} />
           <Route
             path={"*"}
             element={
