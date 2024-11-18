@@ -53,12 +53,16 @@ export async function create(page: Page) {
 }
 
 export async function update(newPage: Page) {
-  const id = newPage.id;
+  const id = newPage.page_id;
   const index = pages.findIndex((oldPage) => oldPage.id === id);
   pages[index] = newPage;
   return pages;
 }
-export async function deletePage(id: string) {
-  pages = pages.filter((page) => page.id !== id);
-  return pages;
+export async function deletePage(id: string): Promise<any> {
+  try {
+    const sql = `delete from pages where page_id = '${id}' and user_email = '${userEmail}';`;
+    return await query(sql);
+  } catch (error) {
+    logError(error);
+  }
 }

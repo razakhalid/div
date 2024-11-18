@@ -45,7 +45,7 @@ export default function Home() {
     <Grid>
       {pages?.length ? (
         <div className="pages-grid">
-          {pages.map((page) => (
+          {pages.map((page: Page) => (
             <div
               key={page.page_id}
               className="page-item"
