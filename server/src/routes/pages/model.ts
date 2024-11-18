@@ -7,20 +7,36 @@ let pages: Page[] = [];
 const userEmail = "ra97za@gmail.com";
 
 export async function getAll() {
-  return pages;
+  try {
+    const sql = `select * from pages where user_email = '${userEmail}';`;
+    const rows = await query(sql);
+    // console.log("rows: ", rows);
+    return rows;
+  } catch (error) {
+    logError(error);
+    throw error;
+  }
 }
 
 export async function getById(id: string) {
-  return pages.find((page) => page.id === id);
+  try {
+    const sql = `select * from pages where page_id = '${id}' and user_email = '${userEmail}';`;
+    const page = await query(sql);
+    // console.log("page: ", page, sql);
+    return page;
+  } catch (error) {
+    logError(error);
+    throw error;
+  }
 }
 
 export async function create(page: Page) {
-  if (!page.id) page.id = crypto.randomUUID();
+  if (!page.page_id) page.page_id = crypto.randomUUID();
   try {
     const sql = `
         insert into pages (page_id, title, content, user_email)
           values (
-            '${page.id}',
+            '${page.page_id}',
             '${page.title}',
             '${page.content}',
             '${userEmail}'

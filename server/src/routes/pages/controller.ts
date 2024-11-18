@@ -5,15 +5,18 @@ const pagesRouter = express.Router();
 
 pagesRouter.get("/", async (_, res: Response): Promise<any> => {
   const pages = await getAll();
-  // console.log(pages);
-  return res.status(200).json(pages);
+  // console.log("pages: ", pages);
+  return res.status(200).json({ data: pages });
 });
 
-pagesRouter.get("/:pageId", async (req: Request, res: Response) => {
-  const page = await getById(req.params.pageId);
-
-  res.json(page);
-});
+pagesRouter.get(
+  "/:pageId",
+  async (req: Request, res: Response): Promise<any> => {
+    const page = await getById(req.params.pageId);
+    console.log("page: ", page);
+    return res.status(200).json({ data: page });
+  },
+);
 
 // @ts-ignore
 pagesRouter.post("/", async (req: Request, res: Response) => {

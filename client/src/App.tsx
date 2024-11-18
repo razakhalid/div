@@ -17,7 +17,9 @@ export default function App() {
   const fetchPages = async () => {
     try {
       const response = await fetch(endpointUrls.pages);
-      setPages(await response.json());
+      const { data: pages } = await response.json();
+      // console.log("pages: ", pages);
+      setPages(pages);
     } catch (e) {
       console.log(e);
     }

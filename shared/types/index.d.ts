@@ -1,5 +1,5 @@
 export type Page = {
-  id?: string;
+  page_id?: string;
   title: string;
   content: string;
 };

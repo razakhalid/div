@@ -23,7 +23,8 @@ export async function connect() {
 
 export async function query(query: string) {
   try {
-    const { rows } = await client.query(query);
+    const result = await client.query(query);
+    const { rows } = result;
     return rows;
   } catch (error) {
     logError(error);

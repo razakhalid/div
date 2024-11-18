@@ -14,7 +14,7 @@ export default function Home() {
   // }, [pages]);
 
   const handlePageClick = (page: Page) => {
-    navigate({ pathname: paths.PAGE_PAGE, search: "?pageId=" + page.id });
+    navigate({ pathname: paths.PAGE_PAGE, search: "?pageId=" + page.page_id });
   };
 
   const handleNewPage = () => {
@@ -31,7 +31,9 @@ export default function Home() {
       await fetch(`${endpointUrls.pages}/${pageId}`, {
         method: "DELETE",
       });
-      const updatedPages = pages.filter((page: Page) => page.id !== pageId);
+      const updatedPages = pages.filter(
+        (page: Page) => page.page_id !== pageId,
+      );
 
       setPages(updatedPages);
     } catch (e) {
@@ -45,12 +47,12 @@ export default function Home() {
         <div className="pages-grid">
           {pages.map((page) => (
             <div
-              key={page.id}
+              key={page.page_id}
               className="page-item"
               onClick={() => handlePageClick(page)}
             >
               <div className="pages-header">
-                <button onClick={(event) => deletePage(event, page.id)}>
+                <button onClick={(event) => deletePage(event, page.page_id)}>
                   x
                 </button>
               </div>

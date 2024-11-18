@@ -15,21 +15,29 @@ export default function Page() {
 
   useEffect(() => {
     const pageId = URLSearchParams.get("pageId");
-    const fetchPage = async (pageId: string) => {
-      try {
-        const response = await fetch(`${endpointUrls.pages}/${pageId}`);
+    // const fetchPage = async (pageId: string) => {
+    //   try {
+    //     const response = await fetch(`${endpointUrls.pages}/${pageId}`);
+    //
+    //     const { data: page } = await response.json();
+    //     console.log("page: ", page);
+    //     setTitle(page.title);
+    //     setContent(page.content);
+    //     setPage(page);
+    //   } catch (e) {
+    //     console.log(e);
+    //   }
+    // };
+    // if (pageId) fetchPage(pageId);
 
-        const page: PageType = await response.json();
-        setTitle(page.title);
-        setContent(page.content);
-
-        setPage(page);
-      } catch (e) {
-        console.log(e);
-      }
-    };
-
-    if (pageId) fetchPage(pageId);
+    if (pageId) {
+      const currentPage = pages.find(
+        (page: PageType) => page.page_id === pageId,
+      );
+      setTitle(currentPage?.title);
+      setContent(currentPage?.content);
+      setPage(currentPage);
+    }
   }, [URLSearchParams]);
 
   const handleAddPage = async (event: React.FormEvent) => {
@@ -66,7 +74,7 @@ export default function Page() {
     }
 
     try {
-      const response = await fetch(`${endpointUrls.pages}/${page.id}`, {
+      const response = await fetch(`${endpointUrls.pages}/${page.page_id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
