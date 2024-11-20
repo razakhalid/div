@@ -3,7 +3,7 @@ import { endpointUrls, paths } from "../../constants";
 import { useContext, useEffect, useState } from "react";
 import { Page as PageType } from "../../../../shared/types";
 import { useNavigate, useParams } from "react-router-dom";
-import { Button, Grid, Input, TextareaAutosize } from "@mui/material";
+import { Button, Grid, Input } from "@mui/material";
 import { AppContext } from "../../App.tsx";
 
 export default function Page() {
@@ -89,7 +89,7 @@ export default function Page() {
     <form
       className="page-form"
       onSubmit={(event) =>
-        page ? handleUpdatePage(event) : handleAddPage(event)
+        page && page.title ? handleUpdatePage(event) : handleAddPage(event)
       }
     >
       <Grid container display={"grid"} columns={1} rowSpacing={2} px={4}>
@@ -100,18 +100,19 @@ export default function Page() {
             placeholder="Title"
             required
             fullWidth
+            sx={{ width: "100%" }}
           ></Input>
         </Grid>
 
         <Grid item component={"div"}>
-          <TextareaAutosize
+          <textarea
             value={content}
             onChange={(event) => setContent(event.target.value)}
             placeholder="Content"
             required
-            minRows={20}
-            style={{ width: "100%" }}
-          ></TextareaAutosize>
+            rows={20}
+            style={{ width: "97%" }}
+          ></textarea>
         </Grid>
 
         <Grid item component={"div"}>

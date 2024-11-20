@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Page } from "../../../../shared/types";
 import { endpointUrls, paths } from "../../constants";
 import { useNavigate } from "react-router-dom";
@@ -10,13 +10,13 @@ export default function Home() {
   const { pages, setPages } = useContext(AppContext);
   const navigate = useNavigate();
 
-  // useEffect(() => {
-  //   console.log(pages);
-  // }, [pages]);
+  useEffect(() => {
+    console.log(pages);
+  }, [pages]);
 
-  const handlePageClick = (page: Page) => {
-    navigate({ pathname: paths.PAGE_PAGE, search: "?pageId=" + page.page_id });
-  };
+  // const handlePageClick = (page: Page) => {
+  //   navigate({ pathname: paths.PAGE_PAGE, search: "?pageId=" + page.page_id });
+  // };
 
   const handleNewPage = () => {
     navigate({ pathname: paths.PAGE_PAGE });

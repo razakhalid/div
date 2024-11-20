@@ -6,7 +6,12 @@ import theme from "./theme";
 import { Page } from "../../shared/types";
 import { endpointUrls } from "./constants";
 
-export const AppContext = createContext<any>();
+export const AppContext = createContext<any>({
+  pages: [],
+  setPages: null,
+  isLoggedIn: false,
+  setIsLoggedIn: null,
+});
 
 export default function App() {
   const [pages, setPages] = useState<Page[]>([]);

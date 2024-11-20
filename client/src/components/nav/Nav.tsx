@@ -1,12 +1,10 @@
-import { Box, Button } from "@mui/material";
+import { Box } from "@mui/material";
 import { paths, sizes } from "../../constants";
 import { NavLink } from "react-router-dom";
 import HomeIcon from "@mui/icons-material/Home";
 import LogoutIcon from "@mui/icons-material/Logout";
 import PageLinks from "./PageLinks.tsx";
-import { useContext } from "react";
-import { AppContext } from "../../App.tsx";
-import React from "react";
+import LinkButton from "./LinkButton";
 
 const topLinks = [
   {
@@ -15,25 +13,6 @@ const topLinks = [
     label: "Home",
   },
 ];
-
-const LinkButton = ({
-  icon,
-  label,
-}: {
-  icon: React.ReactNode;
-  label: string;
-}) => (
-  <Button
-    sx={{
-      width: "100%",
-      justifyContent: "flex-start",
-      paddingLeft: (theme) => theme.spacing(2),
-    }}
-  >
-    {icon}
-    <Box sx={{ marginLeft: (theme) => theme.spacing(1) }}>{label}</Box>
-  </Button>
-);
 
 const TopLinks = () =>
   topLinks.map((link, index) => (
@@ -47,8 +26,6 @@ const TopLinks = () =>
   ));
 
 export default function Nav() {
-  const { pages } = useContext(AppContext);
-
   return (
     <nav>
       <Box
@@ -69,9 +46,7 @@ export default function Nav() {
           }}
         >
           <TopLinks />
-          <PageLinks
-            pageLinks={pages.map(({ id, title }) => ({ id, title }))}
-          />
+          <PageLinks />
         </Box>
         <Box
           className={"links-container bottom"}

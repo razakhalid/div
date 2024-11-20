@@ -1,26 +1,27 @@
 import {
   BrowserRouter,
-  Navigate,
+  // Navigate,
   Outlet,
   Route,
   Routes,
 } from "react-router-dom";
 import Login from "../pages/login/Login.tsx";
 import Home from "../pages/home/Home.tsx";
-import { useContext, useEffect } from "react";
+// import { useContext, useEffect } from "react";
 import { paths } from "../constants";
 import MainWrapper from "../components/Main.tsx";
 import Page from "../pages/page/Page.tsx";
-import { cookieUtils } from "../utils";
-import { AppContext } from "../App.tsx";
+// import { cookieUtils } from "../utils";
+// import { AppContext } from "../App.tsx";
 
 function PrivateRoute() {
-  const { isLoggedIn, setIsLoggedIn } = useContext(AppContext);
-  useEffect(() => {
-    setIsLoggedIn(!!cookieUtils.getCookie("github_access_token"));
-  }, [isLoggedIn]);
-  if (!isLoggedIn)
-    return isLoggedIn ? <Navigate to={paths.LOGIN_PAGE} replace /> : <Outlet />;
+  // const { isLoggedIn, setIsLoggedIn } = useContext(AppContext);
+  // useEffect(() => {
+  //   setIsLoggedIn(!!cookieUtils.getCookie("github_access_token"));
+  // }, [isLoggedIn]);
+  // if (!isLoggedIn)
+  //   return isLoggedIn ? <Navigate to={paths.LOGIN_PAGE} replace /> : <Outlet />;
+  return <Outlet />;
 }
 
 export default function AppRouter() {
