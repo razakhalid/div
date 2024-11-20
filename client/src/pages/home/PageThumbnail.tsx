@@ -1,7 +1,7 @@
 import { Page } from "../../../../shared/types";
 // import { Card, CardContent, Typography } from "@mui/material";
 import React from "react";
-import { Box, Card, Icon, IconButton } from "@mui/material";
+import { Box, Button, Card, Icon, IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 
 export default function PageThumbnail({
@@ -14,26 +14,28 @@ export default function PageThumbnail({
   handleDeletePage: (event: React.MouseEvent, pageId: string) => void;
 }) {
   return (
-    <Card
-      key={page.page_id}
-      className="page-item"
-      onClick={() => handlePageClick(page.page_id ?? "")}
-    >
-      <Box
-        className="pages-header"
-        sx={{ display: "flex", justifyContent: "flex-end" }}
-      >
+    <Box sx={{ position: "relative" }}>
+      <Card key={page.page_id} className="page-item" sx={{ pt: 4 }}>
         <IconButton
-          onClick={(event) => handleDeletePage(event, page.page_id ?? "")}
+          onClick={(event) => {
+            event.stopPropagation();
+            handleDeletePage(event, page.page_id ?? "");
+          }}
           src={CloseIcon}
+          sx={{ position: "absolute", top: 0, right: 0 }}
         >
           <Icon component={CloseIcon}></Icon>
         </IconButton>
-      </Box>
-      <Box className="card-main" sx={{ p: 2 }}>
-        <h2>{page.title}</h2>
-        <p>{page.content}</p>
-      </Box>
-    </Card>
+        <Button
+          onClick={() => handlePageClick(page.page_id ?? "")}
+          sx={{ color: "black" }}
+        >
+          <Box className="card-main" sx={{ px: 2 }}>
+            <h2>{page.title}</h2>
+            <p>{page.content}</p>
+          </Box>
+        </Button>
+      </Card>
+    </Box>
   );
 }

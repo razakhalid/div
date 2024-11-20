@@ -51,8 +51,10 @@ export default function Home() {
               <PageThumbnail
                 key={page.page_id}
                 page={page}
-                handlePageClick={() => console.log()}
-                handleDeletePage={() => console.log()}
+                handlePageClick={() =>
+                  navigate(`${paths.PAGE_PAGE}/${page.page_id}`)
+                }
+                handleDeletePage={deletePage}
               />
             </Grid>
           ))}
