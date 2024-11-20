@@ -2,8 +2,9 @@ import React, { useContext } from "react";
 import { Page } from "../../../../shared/types";
 import { endpointUrls, paths } from "../../constants";
 import { useNavigate } from "react-router-dom";
-import { Button, Grid } from "@mui/material";
+import { Box, Button, Grid } from "@mui/material";
 import { AppContext } from "../../App.tsx";
+import PageThumbnail from "./PageThumbnail.tsx";
 
 export default function Home() {
   const { pages, setPages } = useContext(AppContext);
@@ -44,27 +45,24 @@ export default function Home() {
   return (
     <Grid>
       {pages?.length ? (
-        <div className="pages-grid">
+        <Grid container className="pages-grid" columns={2} columnSpacing={4}>
           {pages.map((page: Page) => (
-            <div
-              key={page.page_id}
-              className="page-item"
-              onClick={() => handlePageClick(page)}
-            >
-              <div className="pages-header">
-                <button onClick={(event) => deletePage(event, page.page_id)}>
-                  x
-                </button>
-              </div>
-              <h2>{page.title}</h2>
-              <p>{page.content}</p>
-            </div>
+            <Grid item>
+              <PageThumbnail
+                key={page.page_id}
+                page={page}
+                handlePageClick={() => console.log()}
+                handleDeletePage={() => console.log()}
+              />
+            </Grid>
           ))}
-        </div>
+        </Grid>
       ) : null}
-      <Button onClick={handleNewPage} variant={"contained"}>
-        New Page +
-      </Button>
+      <Box sx={{ py: 4 }}>
+        <Button onClick={handleNewPage} variant={"contained"}>
+          New Page +
+        </Button>
+      </Box>
     </Grid>
   );
 }
