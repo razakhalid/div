@@ -41,6 +41,7 @@ export default function Nav() {
       >
         <Box
           className={"links-container top"}
+          data-testid={"top-links-container"}
           sx={{
             paddingTop: (theme) => theme.spacing(4),
             paddingBottom: (theme) => theme.spacing(4),
@@ -51,6 +52,7 @@ export default function Nav() {
         </Box>
         <Box
           className={"links-container bottom"}
+          data-testid={"bottom-links-container"}
           sx={{
             paddingTop: (theme) => theme.spacing(4),
             paddingBottom: (theme) => theme.spacing(4),
