@@ -45,7 +45,13 @@ export default function Home() {
   return (
     <Grid>
       {pages?.length ? (
-        <Grid container className="pages-grid" columns={2} columnSpacing={4}>
+        <Grid
+          container
+          className="pages-grid"
+          data-testid="pgaes-grid"
+          columns={2}
+          columnSpacing={4}
+        >
           {pages.map((page: Page) => (
             <Grid item>
               <PageThumbnail
@@ -61,7 +67,11 @@ export default function Home() {
         </Grid>
       ) : null}
       <Box sx={{ py: 4 }}>
-        <Button onClick={handleNewPage} variant={"contained"}>
+        <Button
+          onClick={handleNewPage}
+          variant={"contained"}
+          data-testid={`delete-page-button`}
+        >
           New Page +
         </Button>
       </Box>

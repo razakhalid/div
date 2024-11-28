@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="75c33629-2ae8-47e4-affe-3628b9ee02d4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/routes/pages/controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes/pages/controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/routes/pages/model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes/pages/model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/nav/Nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/nav/Nav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/home/Home.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/home/Home.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/home/Home.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +44,7 @@
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/Users/rkhalid/Developer/ust/div/node_modules/prettier",
     "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/Users/razakhalid/Developer/div/server/node_modules/typescript/lib",
+    "ts.external.directory.path": "/Users/rkhalid/Developer/ust/div/client/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -75,7 +76,6 @@
     </configuration>
     <list>
       <item itemvalue="Node.js.dev" />
-      <item itemvalue="TypeScript.dev" />
     </list>
   </component>
   <component name="SharedIndexes">
