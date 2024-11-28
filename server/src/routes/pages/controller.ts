@@ -52,7 +52,7 @@ pagesRouter.put("/:id", async (req: Request, res: Response) => {
 
   try {
     const updatedPage = await update({
-      id,
+      page_id: id,
       title,
       content,
     });

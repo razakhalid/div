@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75c33629-2ae8-47e4-affe-3628b9ee02d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/pages/home/PageThumbnail.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/nav/PageLinks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/nav/PageLinks.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/home/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/routes/pages/controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes/pages/controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/routes/pages/model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes/pages/model.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,27 +26,27 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Node.js.dev.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TypeScript.dev.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/rkhalid/Developer/ust/div&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/rkhalid/Developer/ust/div/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/rkhalid/Developer/ust/div/client/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Node.js.dev.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TypeScript.dev.executor": "Run",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/rkhalid/Developer/ust/div",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/rkhalid/Developer/ust/div/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "/Users/razakhalid/Developer/div/server/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -58,7 +57,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Node.js.dev">
-    <configuration name="dev" type="NodeJSConfigurationType" path-to-js-file="src/server.ts" typescript-loader="bundled" working-dir="$PROJECT_DIR$/server">
+    <configuration name="dev" type="NodeJSConfigurationType" path-to-js-file="src/server.ts" working-dir="$PROJECT_DIR$/server">
       <method v="2" />
     </configuration>
     <configuration name="dev" type="TypeScriptProgramRunner" factoryName="TypeScript">
@@ -72,11 +71,11 @@
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="src/server.ts" />
       <option name="programParameters" value="" />
-      <option name="tsnodePackage" value="~/Developer/div/server/node_modules/ts-node" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Node.js.dev" />
+      <item itemvalue="TypeScript.dev" />
     </list>
   </component>
   <component name="SharedIndexes">

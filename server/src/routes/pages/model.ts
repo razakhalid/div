@@ -53,8 +53,8 @@ export async function create(page: Page) {
 }
 
 export async function update(newPage: Page) {
-  const id = newPage.page_id;
-  const index = pages.findIndex((oldPage) => oldPage.id === id);
+  const page_id = newPage.page_id;
+  const index = pages.findIndex((oldPage: Page) => oldPage.page_id === page_id);
   pages[index] = newPage;
   return pages;
 }
