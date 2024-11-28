@@ -25,24 +25,28 @@ const renderNav = () => {
 };
 
 describe("Nav Component", () => {
+  // Verifies that the basic navigation structure exists in the DOM
   it("renders the navigation container", () => {
     renderNav();
     const navElement = screen.getByRole("navigation");
     expect(navElement).toBeDefined();
   });
 
+  // Ensures the top section of navigation containing primary links is present
   it("renders the top links container", () => {
     renderNav();
     const topLinksContainer = screen.getByTestId("top-links-container");
     expect(topLinksContainer).toBeDefined();
   });
 
+  // Checks if the bottom section of navigation containing secondary links (like logout) exists
   it("renders the bottom links container", () => {
     renderNav();
     const bottomLinksContainer = screen.getByTestId("bottom-links-container");
     expect(bottomLinksContainer).toBeDefined();
   });
 
+  // Verifies that the PageLinks component is properly integrated and rendered within the navigation
   it("includes PageLinks component", () => {
     // Mock PageLinks component
     vi.mock("./PageLinks.tsx", () => ({

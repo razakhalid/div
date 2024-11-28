@@ -41,6 +41,7 @@ const renderWithContext = (pages = mockPages) => {
 };
 
 describe("Home.tsx", () => {
+  // Tests that clicking the New Page button triggers navigation to the page creation route
   it("navigates to new page when New Page button is clicked", () => {
     renderWithContext();
     const newPageButton = screen.getByText("New Page +");
@@ -50,6 +51,7 @@ describe("Home.tsx", () => {
     });
   });
 
+  // Verifies that clicking a page thumbnail navigates to that specific page's detail view
   it("navigates to existing page when thumbnail is clicked", () => {
     renderWithContext();
     const firstPageTitle = screen.getByText(mockPages[0].title);
