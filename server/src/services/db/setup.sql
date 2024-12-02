@@ -1,5 +1,8 @@
 create extension if not exists "uuid-ossp";
 
+-- login with username and dbname
+-- psql -U postgres postgres;
+
 create table if not exists "users" (
     email varchar(255) primary key unique not null
 );

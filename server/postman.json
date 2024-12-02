@@ -1,0 +1,326 @@
+{
+	"info": {
+		"_postman_id": "698c5f7c-e7ff-40a2-b4ff-7ecec6b9ee25",
+		"name": "Div API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2158359"
+	},
+	"item": [
+		{
+			"name": "Pages",
+			"item": [
+				{
+					"name": "Get Page by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_v1_url}}/pages/:pageId",
+							"host": [
+								"{{api_v1_url}}"
+							],
+							"path": [
+								"pages",
+								":pageId"
+							],
+							"variable": [
+								{
+									"key": "pageId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Page by ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api_v1_url}}/api/v1/pages/:pageId",
+									"host": [
+										"{{api_v1_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"pages",
+										":pageId"
+									],
+									"variable": [
+										{
+											"key": "pageId"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Get All Pages",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_v1_url}}/pages",
+							"host": [
+								"{{api_v1_url}}"
+							],
+							"path": [
+								"pages"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Pages",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api_v1_url}}/pages",
+									"host": [
+										"{{api_v1_url}}"
+									],
+									"path": [
+										"pages"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Create Page",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"string\",\n    \"content\": \"string\"\n}"
+						},
+						"url": {
+							"raw": "{{api_v1_url}}/api/v1/pages",
+							"host": [
+								"{{api_v1_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"pages"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Page",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"string\",\n    \"content\": \"string\"\n}"
+								},
+								"url": {
+									"raw": "{{api_v1_url}}/api/v1/pages",
+									"host": [
+										"{{api_v1_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"pages"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Update Page",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"string\",\n    \"content\": \"string\"\n}"
+						},
+						"url": {
+							"raw": "{{api_v1_url}}/api/v1/pages/:id",
+							"host": [
+								"{{api_v1_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"pages",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Page",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"string\",\n    \"content\": \"string\"\n}"
+								},
+								"url": {
+									"raw": "{{api_v1_url}}/api/v1/pages/:id",
+									"host": [
+										"{{api_v1_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"pages",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Delete Page",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{api_v1_url}}/pages/:id",
+							"host": [
+								"{{api_v1_url}}"
+							],
+							"path": [
+								"pages",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "32b35c1f-bc83-4db2-9650-e5d6ac1b2a1e"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Page",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{api_v1_url}}/api/v1/pages/:id",
+									"host": [
+										"{{api_v1_url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"pages",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Github OAuth Callback",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_v1_url}}/github/callback?code",
+							"host": [
+								"{{api_v1_url}}"
+							],
+							"path": [
+								"github",
+								"callback"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "api_v1_url",
+			"value": "http://localhost:3000"
+		}
+	]
+}

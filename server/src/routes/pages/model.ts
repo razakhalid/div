@@ -53,9 +53,15 @@ export async function create(page: Page) {
 }
 
 export async function update(newPage: Page) {
-  const page_id = newPage.page_id;
-  const index = pages.findIndex((oldPage: Page) => oldPage.page_id === page_id);
-  pages[index] = newPage;
+  // console.log(newPage);
+  const sql = `
+    UPDATE "pages" 
+    SET "title" = '${newPage.title}', 
+        "content" = '${newPage.content}'
+    WHERE "page_id" = '${newPage.page_id}'
+    RETURNING *`;
+  const pages = await query(sql);
+
   return pages;
 }
 export async function deletePage(id: string): Promise<any> {

@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75c33629-2ae8-47e4-affe-3628b9ee02d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/server/src/routes/auth/index.test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/routes/pages/controller.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/postman.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/routes/pages/controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes/pages/controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/routes/pages/model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes/pages/model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/services/db/index.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/services/db/index.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/services/db/setup.sql" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/services/db/setup.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +34,7 @@
     "Node.js.dev.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TypeScript.dev.executor": "Run",
+    "TypeScript.dev.executor": "Debug",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "/Users/rkhalid/Developer/ust/div",
     "node.js.detected.package.eslint": "true",
@@ -45,7 +46,7 @@
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/Users/rkhalid/Developer/ust/div/node_modules/prettier",
     "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/Users/rkhalid/Developer/ust/div/client/node_modules/typescript/lib",
+    "ts.external.directory.path": "/Users/razakhalid/Developer/div/server/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -58,7 +59,32 @@
       <recent name="$PROJECT_DIR$/src/app/components/wrappers" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.dev">
+  <component name="RunManager" selected="TypeScript.dev">
+    <configuration name="DB.connects" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <working-dir value="$PROJECT_DIR$/server" />
+      <vitest-options value="--run" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/server/src/services/db/index.test.ts" />
+      <test-names>
+        <test-name value="DB" />
+        <test-name value="connects" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="test db" type="JavaScriptTestRunnerVitest" temporary="true">
+      <node-interpreter value="project" />
+      <working-dir value="$PROJECT_DIR$/server" />
+      <vitest-options value="--run" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/server/src/services/db/index.test.ts" />
+      <test-names>
+        <test-name value="DB" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="NodeJSConfigurationType" path-to-js-file="src/server.ts" working-dir="$PROJECT_DIR$/server">
       <method v="2" />
     </configuration>
@@ -73,16 +99,26 @@
       <option name="extraTypeScriptOptions" value="" />
       <option name="scriptName" value="src/server.ts" />
       <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="~/Developer/div/server/node_modules/ts-node" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Node.js.dev" />
+      <item itemvalue="TypeScript.dev" />
+      <item itemvalue="Vitest.DB.connects" />
+      <item itemvalue="Vitest.test db" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Vitest.test db" />
+        <item itemvalue="Vitest.DB.connects" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.22855.79" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-WS-241.15989.105" />
       </set>
     </attachedChunks>
   </component>
@@ -109,6 +145,7 @@
       <workItem from="1731896708285" duration="12073000" />
       <workItem from="1731943786579" duration="1207000" />
       <workItem from="1732064452148" duration="1200000" />
+      <workItem from="1733115719343" duration="6140000" />
     </task>
     <servers />
   </component>
@@ -118,11 +155,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint type="javascript">
-          <url>file://$PROJECT_DIR$/server/src/routes/pages/controller.ts</url>
-          <line>15</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server/src/routes/pages/model.ts</url>
           <line>23</line>

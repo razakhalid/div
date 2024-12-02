@@ -12,8 +12,9 @@ pagesRouter.get("/", async (_, res: Response): Promise<any> => {
 pagesRouter.get(
   "/:pageId",
   async (req: Request, res: Response): Promise<any> => {
+    // console.log("pageId: ", req.params.pageId);
     const page = await getById(req.params.pageId);
-    console.log("page: ", page);
+    // console.log("page: ", page);
     return res.status(200).json({ data: page });
   },
 );
@@ -38,9 +39,10 @@ pagesRouter.post("/", async (req: Request, res: Response) => {
 });
 
 // @ts-ignore
-pagesRouter.put("/:id", async (req: Request, res: Response) => {
+pagesRouter.put("/:pageId", async (req: Request, res: Response) => {
   const { title, content } = req.body;
-  const id = req.params.id;
+  const id = req.params.pageId;
+  // console.log(id);
 
   if (!title || !content) {
     return res.status(400).send("title and content fields required");
